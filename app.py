@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 @app.get("/add")
 def add():
+    """Show result of adding args a and b"""
+
     a_value = int(request.args.get("a"))
     b_value = int(request.args.get("b"))
 
@@ -13,6 +15,8 @@ def add():
 
 @app.get("/sub")
 def sub():
+    """Show result of subrtacting args a and b"""
+
     a_value = int(request.args.get("a"))
     b_value = int(request.args.get("b"))
 
@@ -20,6 +24,8 @@ def sub():
 
 @app.get("/mult")
 def mult():
+    """Show result of multiplying args a and b"""
+
     a_value = int(request.args.get("a"))
     b_value = int(request.args.get("b"))
 
@@ -27,6 +33,8 @@ def mult():
 
 @app.get("/div")
 def div():
+    """Show result of dividing args a and b"""
+
     a_value = int(request.args.get("a"))
     b_value = int(request.args.get("b"))
 
